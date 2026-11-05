@@ -1,0 +1,72 @@
+---
+import Head from '../components/Head.astro';
+import Header from '../components/Header.astro';
+import Footer from '../components/Footer.astro';
+---
+
+<html lang="fr">
+  <head>
+    <Head title="Création de sites vitrines statiques — Freelance | Mirosotech" description="Sites vitrines rapides, sécurisés et sans abonnement pour artisans, commerçants et indépendants. Développement freelance par Liva Randrianivoson." />
+  </head>
+  <body class="bg-gray-50 text-gray-900">
+    <Header />
+
+    <section class="bg-primary text-white py-20 px-6 text-center">
+      <h1 class="text-4xl md:text-6xl font-bold mb-6 leading-tight">
+        Sites vitrines statiques pour<br />
+        artisans et indépendants
+      </h1>
+      <p class="text-lg md:text-xl mb-10 max-w-2xl mx-auto opacity-90">
+        Un site rapide, sécurisé et sans abonnement mensuel.<br />
+        Idéal pour lancer votre activité et être trouvé sur Google.
+      </p>
+      <a href="/contact" class="bg-accent text-white px-8 py-4 rounded-lg font-semibold text-lg hover:bg-blue-700 transition">
+        Obtenir un devis gratuit
+      </a>
+    </section>
+
+    <section class="py-16 px-6 max-w-6xl mx-auto">
+      <h2 class="text-3xl font-bold mb-12 text-center">Pourquoi un site statique ?</h2>
+      <div class="grid md:grid-cols-3 gap-8">
+        <div class="bg-white p-6 rounded-xl shadow-sm border border-gray-100">
+          <h3 class="text-xl font-bold mb-3">⚡ Rapide</h3>
+          <p class="text-gray-600">Chargement quasi instantané. Aucun temps d'attente pour vos visiteurs.</p>
+        </div>
+        <div class="bg-white p-6 rounded-xl shadow-sm border border-gray-100">
+          <h3 class="text-xl font-bold mb-3">🔒 Sécurisé</h3>
+          <p class="text-gray-600">Pas de base de données, pas de plugin à mettre à jour. Moins de risques de piratage.</p>
+        </div>
+        <div class="bg-white p-6 rounded-xl shadow-sm border border-gray-100">
+          <h3 class="text-xl font-bold mb-3">💰 Économique</h3>
+          <p class="text-gray-600">Hébergement gratuit ou très peu coûteux. Aucun abonnement mensuel requis.</p>
+        </div>
+      </div>
+    </section>
+
+    <section class="py-16 px-6 max-w-6xl mx-auto">
+      <h2 class="text-3xl font-bold mb-12 text-center">Mes 3 activités</h2>
+      <div class="grid md:grid-cols-3 gap-8">
+        <div class="bg-white p-8 rounded-xl shadow-sm border border-gray-100 hover:shadow-md transition group">
+          <div class="text-3xl mb-4 group-hover:text-accent transition">🌐</div>
+          <h3 class="text-xl font-bold mb-4">Création de sites vitrines</h3>
+          <p class="text-gray-600 mb-6">Sites statiques rapides, sécurisés et sans abonnement pour artisans et indépendants.</p>
+          <a href="/services" class="text-accent font-semibold hover:underline">Voir les forfaits →</a>
+        </div>
+        <div class="bg-white p-8 rounded-xl shadow-sm border border-gray-100 hover:shadow-md transition group">
+          <div class="text-3xl mb-4 group-hover:text-accent transition">🎙️</div>
+          <h3 class="text-xl font-bold mb-4">Transcription audio &amp; vidéo</h3>
+          <p class="text-gray-600 mb-6">Transformation de vos fichiers audio et vidéo en texte, rapidement et en toute confidentialité.</p>
+          <a href="/transcription" class="text-accent font-semibold hover:underline">En savoir plus →</a>
+        </div>
+        <div class="bg-white p-8 rounded-xl shadow-sm border border-gray-100 hover:shadow-md transition group">
+          <div class="text-3xl mb-4 group-hover:text-accent transition">📋</div>
+          <h3 class="text-xl font-bold mb-4">Compte-rendu de réunion</h3>
+          <p class="text-gray-600 mb-6">Transcription et compte-rendu structuré : décisions, actions, responsables, échéances.</p>
+          <a href="/reunion" class="text-accent font-semibold hover:underline">En savoir plus →</a>
+        </div>
+      </div>
+    </section>
+
+    <Footer />
+  </body>
+</html>

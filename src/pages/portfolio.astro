@@ -1,0 +1,66 @@
+---
+import Head from '../components/Head.astro';
+import Header from '../components/Header.astro';
+import Footer from '../components/Footer.astro';
+---
+
+<html lang="fr">
+  <head>
+    <Head title="Portfolio — Réalisations de sites vitrines | Mirosotech" description="Exemples de sites vitrines statiques réalisés par Liva Randrianivoson, développeur freelance." />
+  </head>
+  <body class="bg-gray-50 text-gray-900">
+    <Header />
+
+    <section class="py-16 px-6 max-w-6xl mx-auto">
+      <div class="text-center mb-16">
+        <h2 class="text-3xl md:text-4xl font-bold mb-4">Mes réalisations</h2>
+        <p class="text-gray-600 text-lg">Chaque site est conçu pour être rapide, moderne et référencé.</p>
+      </div>
+
+      <div class="grid md:grid-cols-3 gap-8">
+        <!-- Exemple 1 -->
+        <div class="bg-white rounded-xl shadow-sm border border-gray-100 overflow-hidden hover:shadow-md transition">
+          <div class="h-48 bg-gray-200 flex items-center justify-center text-gray-400 font-bold">
+            Site artisan — Plomberie
+          </div>
+          <div class="p-6">
+            <h3 class="text-lg font-bold mb-2">Artisan plombier — Lyon</h3>
+            <p class="text-gray-600 text-sm mb-4">Site vitrine 4 pages avec formulaire de contact et SEO local.</p>
+            <a href="#" class="text-accent text-sm font-semibold hover:underline">Voir le site</a>
+          </div>
+        </div>
+
+        <!-- Exemple 2 -->
+        <div class="bg-white rounded-xl shadow-sm border border-gray-100 overflow-hidden hover:shadow-md transition">
+          <div class="h-48 bg-gray-200 flex items-center justify-center text-gray-400 font-bold">
+            Site commerçant — Boulangerie
+          </div>
+          <div class="p-6">
+            <h3 class="text-lg font-bold mb-2">Boulangerie pâtisserie — Marseille</h3>
+            <p class="text-gray-600 text-sm mb-4">Présentation des produits, horaires et localisation.</p>
+            <a href="#" class="text-accent text-sm font-semibold hover:underline">Voir le site</a>
+          </div>
+        </div>
+
+        <!-- Exemple 3 -->
+        <div class="bg-white rounded-xl shadow-sm border border-gray-100 overflow-hidden hover:shadow-md transition">
+          <div class="h-48 bg-gray-200 flex items-center justify-center text-gray-400 font-bold">
+            Site consultant — Indépendant
+          </div>
+          <div class="p-6">
+            <h3 class="text-lg font-bold mb-2">Consultant marketing — Paris</h3>
+            <p class="text-gray-600 text-sm mb-4">Site one-page avec portfolio et prise de rendez-vous.</p>
+            <a href="#" class="text-accent text-sm font-semibold hover:underline">Voir le site</a>
+          </div>
+        </div>
+      </div>
+
+      <div class="mt-16 text-center">
+        <p class="text-gray-600 mb-6">Vous avez un projet en tête ?</p>
+        <a href="/contact" class="bg-primary text-white px-8 py-4 rounded-lg font-semibold text-lg hover:bg-gray-800 transition">Discutons de votre projet</a>
+      </div>
+    </section>
+
+    <Footer />
+  </body>
+</html>

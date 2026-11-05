@@ -1,0 +1,81 @@
+---
+import Head from '../components/Head.astro';
+import Header from '../components/Header.astro';
+import Footer from '../components/Footer.astro';
+import ContactForm from '../components/ContactForm.astro';
+---
+
+<html lang="fr">
+  <head>
+    <Head title="Transcription audio et vidéo — Mirosotech" description="Transcription de fichiers audio et vidéo en texte. Rapide, précis, confidentiel." />
+  </head>
+  <body class="bg-gray-50 text-gray-900">
+    <Header />
+
+    <section class="bg-primary text-white py-20 px-6 text-center">
+      <h1 class="text-4xl md:text-6xl font-bold mb-6 leading-tight">
+        Transcription audio &amp; vidéo
+      </h1>
+      <p class="text-lg md:text-xl mb-10 max-w-2xl mx-auto opacity-90">
+        Transformez vos fichiers audio et vidéo en texte.<br />
+        Rapide, précis et confidentiel.
+      </p>
+      <a href="/contact" class="bg-accent text-white px-8 py-4 rounded-lg font-semibold text-lg hover:bg-blue-700 transition">
+        Demander un devis
+      </a>
+    </section>
+
+    <section class="py-16 px-6 max-w-6xl mx-auto">
+      <div class="text-center mb-16">
+        <h2 class="text-3xl font-bold mb-4">Comment ça marche</h2>
+      </div>
+      <div class="grid md:grid-cols-3 gap-8">
+        <div class="bg-white p-8 rounded-xl shadow-sm border border-gray-100 text-center">
+          <div class="text-4xl mb-4">1️⃣</div>
+          <h3 class="text-xl font-bold mb-3">Envoyez votre fichier</h3>
+          <p class="text-gray-600">MP3, WAV, MP4, MOV et plus encore.</p>
+        </div>
+        <div class="bg-white p-8 rounded-xl shadow-sm border border-gray-100 text-center">
+          <div class="text-4xl mb-4">2️⃣</div>
+          <h3 class="text-xl font-bold mb-3">Transcription</h3>
+          <p class="text-gray-600">Conversion en texte fidèle à l'original.</p>
+        </div>
+        <div class="bg-white p-8 rounded-xl shadow-sm border border-gray-100 text-center">
+          <div class="text-4xl mb-4">3️⃣</div>
+          <h3 class="text-xl font-bold mb-3">Réception du texte</h3>
+          <p class="text-gray-600">Livraison par email sous 24 à 48h.</p>
+        </div>
+      </div>
+    </section>
+
+    <section class="py-16 px-6 max-w-6xl mx-auto bg-white rounded-2xl shadow-sm border border-gray-100">
+      <div class="text-center mb-12">
+        <h3 class="text-2xl font-bold mb-4">Tarifs indicatifs</h3>
+      </div>
+      <div class="grid md:grid-cols-2 gap-8">
+        <div class="p-6 border border-gray-200 rounded-xl">
+          <h4 class="font-bold mb-2">Audio</h4>
+          <p class="text-2xl font-bold text-accent mb-4">À partir de 1 € / minute</p>
+          <p class="text-gray-600 text-sm">Entretiens, podcasts, dictaphone</p>
+        </div>
+        <div class="p-6 border border-gray-200 rounded-xl">
+          <h4 class="font-bold mb-2">Vidéo</h4>
+          <p class="text-2xl font-bold text-accent mb-4">À partir de 1,50 € / minute</p>
+          <p class="text-gray-600 text-sm">Réunions, webinaires, conférences</p>
+        </div>
+      </div>
+    </section>
+
+    <section class="py-16 px-6 max-w-4xl mx-auto">
+      <div class="bg-white p-8 rounded-xl shadow-sm border border-gray-100">
+        <h3 class="text-xl font-bold mb-6">🔒 Confidentialité</h3>
+        <p class="text-gray-600 mb-4">
+          Vos fichiers sont traités de manière sécurisée. Aucun tiers n'y a accès. Suppression automatique après livraison sur demande.
+        </p>
+        <ContactForm />
+      </div>
+    </section>
+
+    <Footer />
+  </body>
+</html>

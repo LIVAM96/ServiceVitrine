@@ -1,0 +1,29 @@
+---
+// Remplacez l'URL ci-dessous par votre endpoint Formspree après création du formulaire
+const FORMSPREE_URL = 'https://formspree.io/f/VOTRE_ID_FORMULAIRE';
+---
+
+<form action={FORMSPREE_URL} method="POST" class="space-y-6">
+  <div>
+    <label class="block text-sm font-medium text-gray-700 mb-1">Nom complet</label>
+    <input type="text" name="name" required class="w-full px-4 py-2 border border-gray-300 rounded-lg focus:ring-2 focus:ring-accent focus:border-accent outline-none" placeholder="Ex: Jean Dupont" />
+  </div>
+
+  <div>
+    <label class="block text-sm font-medium text-gray-700 mb-1">Adresse email</label>
+    <input type="email" name="email" required class="w-full px-4 py-2 border border-gray-300 rounded-lg focus:ring-2 focus:ring-accent focus:border-accent outline-none" placeholder="exemple@email.com" />
+  </div>
+
+  <div>
+    <label class="block text-sm font-medium text-gray-700 mb-1">Votre message</label>
+    <textarea name="message" rows="5" required class="w-full px-4 py-2 border border-gray-300 rounded-lg focus:ring-2 focus:ring-accent focus:border-accent outline-none" placeholder="Parlez-moi de votre projet de site vitrine..."></textarea>
+  </div>
+
+  <button type="submit" class="w-full bg-primary text-white px-6 py-3 rounded-lg font-semibold hover:bg-gray-800 transition">
+    Envoyer le message
+  </button>
+</form>
+
+<p class="text-xs text-gray-500 text-center mt-4">
+  En utilisant ce formulaire, vous acceptez que vos données soient utilisées pour répondre à votre demande (voir politique de confidentialité).
+</p>
