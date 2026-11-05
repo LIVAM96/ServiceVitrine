@@ -6,80 +6,59 @@ import Footer from '../components/Footer.astro';
 
 <html lang="fr">
   <head>
-    <Head title="Nos forfaits de création de site vitrine — Mirosotech" description="Forfaits de création de sites vitrines statiques pour artisans et indépendants. À partir de 600 €." />
+    <Head title="Nos forfaits de création de site vitrine — Mirosotech" description="Forfaits de création de sites vitrines statiques pour artisans et indépendants." />
   </head>
   <body class="bg-gray-50 text-gray-900">
     <Header />
 
     <section class="py-16 px-6 max-w-6xl mx-auto">
       <div class="text-center mb-16">
-        <h2 class="text-3xl md:text-4xl font-bold mb-4">Nos forfaits</h2>
-        <p class="text-gray-600 text-lg">Des solutions simples et adaptées à votre activité.</p>
+        <h2 class="text-3xl md:text-4xl font-bold mb-4">Mes services</h2>
+        <p class="text-gray-600 text-lg">Trois activités pour accompagner votre activité professionnelle.</p>
       </div>
 
       <div class="grid md:grid-cols-3 gap-8">
-        <!-- Starter -->
+        <!-- Sites vitrines -->
         <div class="bg-white p-8 rounded-xl shadow-sm border border-gray-100 flex flex-col">
-          <h3 class="text-xl font-bold mb-2">Starter</h3>
+          <h3 class="text-xl font-bold mb-2">🌐 Site vitrine statique</h3>
           <p class="text-2xl font-bold text-accent mb-6">À partir de <span class="text-lg font-normal">600 €</span></p>
           <ul class="space-y-3 mb-8 text-gray-600">
-            <li>✅ 3 pages (Accueil, Services, Contact)</li>
+            <li>✅ 3 à 5 pages (Accueil, Services, Contact…)</li>
             <li>✅ Design responsive (mobile)</li>
             <li>✅ Formulaire de contact</li>
             <li>✅ Nom de domaine configuré</li>
             <li>✅ Hébergement statique gratuit</li>
+            <li>✅ SEO de base inclus</li>
           </ul>
-          <a href="/contact" class="bg-primary text-white px-6 py-3 rounded-lg font-semibold mt-auto hover:bg-gray-800 transition">Choisir ce forfait</a>
+          <a href="/contact" class="bg-primary text-white px-6 py-3 rounded-lg font-semibold mt-auto hover:bg-gray-800 transition">Choisir ce service</a>
         </div>
 
-        <!-- Pro -->
+        <!-- Transcription -->
         <div class="bg-primary text-white p-8 rounded-xl shadow-sm border border-gray-200 flex flex-col relative">
-          <span class="absolute -top-3 left-1/2 -translate-x-1/2 bg-accent text-white px-3 py-1 rounded-full text-xs font-bold">Populaire</span>
-          <h3 class="text-xl font-bold mb-2">Pro</h3>
-          <p class="text-2xl font-bold text-accent mb-6">À partir de <span class="text-lg font-normal">900 €</span></p>
+          <h3 class="text-xl font-bold mb-2">🎙️ Transcription audio</h3>
+          <p class="text-2xl font-bold text-accent mb-6">À partir de <span class="text-lg font-normal">1 € / minute</span></p>
           <ul class="space-y-3 mb-8 text-gray-200">
-            <li>✅ 5 pages (Accueil, Services, À propos, Réalisations, Contact)</li>
-            <li>✅ Design responsive (mobile)</li>
-            <li>✅ Formulaire de contact</li>
-            <li>✅ SEO de base (balises, sitemap, Google Search Console)</li>
-            <li>✅ Nom de domaine configuré</li>
-            <li>✅ Hébergement statique gratuit</li>
+            <li>✅ Fichiers audio (MP3, WAV…)</li>
+            <li>✅ Transcription manuelle soignée</li>
+            <li>✅ Livraison par email</li>
+            <li>✅ Confidentialité garantie</li>
+            <li>✅ Suppression des fichiers sur demande</li>
           </ul>
-          <a href="/contact" class="bg-accent text-white px-6 py-3 rounded-lg font-semibold mt-auto hover:bg-blue-700 transition">Choisir ce forfait</a>
+          <a href="/transcription" class="bg-accent text-white px-6 py-3 rounded-lg font-semibold mt-auto hover:bg-blue-700 transition">En savoir plus</a>
         </div>
 
-        <!-- Sur mesure -->
+        <!-- Compte-rendu -->
         <div class="bg-white p-8 rounded-xl shadow-sm border border-gray-100 flex flex-col">
-          <h3 class="text-xl font-bold mb-2">Sur mesure</h3>
+          <h3 class="text-xl font-bold mb-2">📋 Compte-rendu de réunion</h3>
           <p class="text-2xl font-bold text-gray-900 mb-6">Devis personnalisé</p>
           <ul class="space-y-3 mb-8 text-gray-600">
-            <li>✅ Nombre de pages illimité</li>
-            <li>✅ Rédaction de vos textes</li>
-            <li>✅ Optimisation SEO avancée</li>
-            <li>✅ Maintenance annuelle disponible</li>
-            <li>✅ Nom de domaine et hébergement</li>
+            <li>✅ Transcription des échanges</li>
+            <li>✅ Synthèse des décisions</li>
+            <li>✅ Plan d'actions avec responsables</li>
+            <li>✅ Mise en page professionnelle</li>
+            <li>✅ Confidentialité garantie</li>
           </ul>
-          <a href="/contact" class="bg-primary text-white px-6 py-3 rounded-lg font-semibold mt-auto hover:bg-gray-800 transition">Demander un devis</a>
-        </div>
-      </div>
-    </section>
-
-    <section class="py-16 px-6 max-w-6xl mx-auto bg-white rounded-2xl shadow-sm border border-gray-100">
-      <div class="text-center mb-10">
-        <h3 class="text-2xl font-bold mb-4">Ce qui est inclus dans tous les forfaits</h3>
-      </div>
-      <div class="grid md:grid-cols-3 gap-6 text-center">
-        <div>
-          <p class="font-bold text-accent">📱 Responsive</p>
-          <p class="text-sm text-gray-600 mt-2">Parfait sur téléphone, tablette et ordinateur.</p>
-        </div>
-        <div>
-          <p class="font-bold text-accent">🔍 SEO de base</p>
-          <p class="text-sm text-gray-600 mt-2">Balises, URLs propres, indexation Google.</p>
-        </div>
-        <div>
-          <p class="font-bold text-accent">📄 Mentions légales</p>
-          <p class="text-sm text-gray-600 mt-2">Pages légales et politique de confidentialité incluses.</p>
+          <a href="/reunion" class="bg-primary text-white px-6 py-3 rounded-lg font-semibold mt-auto hover:bg-gray-800 transition">En savoir plus</a>
         </div>
       </div>
     </section>
